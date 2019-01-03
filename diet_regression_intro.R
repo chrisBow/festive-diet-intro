@@ -139,6 +139,8 @@ under_3k_dn_lm <- lm(change ~ calories + five_donuts, data = under_3k)
 
 summary(under_3k_dn_lm)
 
+plot(under_3k_dn_lm)
+
 
 #---- what happens with protein? ----
 
