@@ -11,6 +11,8 @@ head(diet_df)
 
 tail(diet_df)
 
+summary(diet_df)
+
 
 # tidy up the dataframe
 
