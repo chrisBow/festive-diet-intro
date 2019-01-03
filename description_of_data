@@ -1,0 +1,27 @@
+Data was recorded daily in a Google Sheet. There were a few missing values due to days away from the scales.
+
+Variables:
+
+Date: date of observations.
+
+Stone, pounds, ounces: observed weight
+
+weight_oz: Total weight in ounces
+
+calories: approximate calories consumed on that date. Calorie counts were taken for each food based on nutritional information and rounded up to the nearest 50 to facilitate easy record keeping. Where nutritional information was not available, calorie counts were estimated from previous experience and best guesses of ingredients and comparison to meals with available nutritional information.
+
+cals_per_oz: calories per ounce - calories for that day divided by weight in ounces
+
+five_donuts: day where main meal was bag of five jam donuts, 1 = TRUE, 0 = FALSE
+
+walk: day included at least one brisk walk of over 20  minutes, 1 = TRUE, 0 = FALSE
+
+run: day included at one short run of 2.5 miles, 1 = TRUE, 0 = FALSE
+
+wine: day finished with at least one large glass of wine when not accompanied by other fluids, 1 = TRUE, 0 = FALSE
+
+prot: day involved what would be considered a high protein diet, 1 = TRUE, 0 = FALSE
+
+weight: signifies day during period of weight-based exercise; includes rest days as part of period, 1 = TRUE, 0 = FALSE
+
+change: change in weight in oz
