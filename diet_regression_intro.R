@@ -114,6 +114,17 @@ ggplot(diet_df, aes(x = five_donuts,
        y = "Daily weight change (oz)") +
   theme_chris()
 
+
+ggplot(diet_df, aes(x = five_donuts,
+                    y = calories)) +
+  geom_boxplot() +
+  labs(title = "Boxplot of Daily Calorie Intake",
+       subtitle = "Comparing days where I ate five jam doughnuts or not",
+       x = "Did I eat five jam doughnuts for lunch?",
+       y = "Daily calorie intake") +
+  theme_chris()
+
+
 # summary statistics
 
 tapply(diet_df$change, diet_df$five_donuts, summary)
