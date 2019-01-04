@@ -24,4 +24,4 @@ prot: day involved what would be considered a high protein diet, 1 = TRUE, 0 = F
 
 weight: signifies day during period of weight-based exercise; includes rest days as part of period, 1 = TRUE, 0 = FALSE
 
-change: change in weight in oz
+change: resulting change in weight in oz, calculated from following day's observed weight
