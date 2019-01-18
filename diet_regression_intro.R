@@ -225,6 +225,11 @@ summary(under_3k_wr_lm)
 plot(under_3k_wr_lm)
 
 
+# save model for future use
+
+saveRDS(under_3k_wr_lm, "small_model")
+
+
 # augment with broom package
 
 library(broom)
@@ -492,6 +497,25 @@ lm_extra_all_per_oz_sq <- lm(change ~ cals_per_oz +
                           data = diet_df_extra_lagged)
 
 summary(lm_extra_all_per_oz_sq)
+
+
+# working model with walk put back in
+
+diet_final <- lm(change ~ calories +
+                       walk +
+                       run +
+                       binge +
+                       binge_yesterday +
+                       binge_two_days_ago +
+                       binge_three_days_ago,
+                     data = diet_df_extra_lagged)
+
+summary(diet_final)
+plot(diet_final)
+
+saveRDS(diet_final, "full_diet_model")
+
+
 
 
 
